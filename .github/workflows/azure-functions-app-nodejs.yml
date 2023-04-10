@@ -29,6 +29,7 @@ jobs:
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
         npm install
         npm run build
+        npm run test
         popd
 
     - name: 'Run Azure Functions Action'
