@@ -26,11 +26,6 @@ jobs:
         npm install
         npm run build 
 
-    - name: Login via Azure CLI
-      uses: azure/cli-login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-
     - name: Set up Azure Functions extension
       uses: azure/functions-action@v1
       with:
