@@ -26,4 +26,5 @@ jobs:
           app-name: 'UNIV-NP-EUS-FUNC'
           package: .
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
-
+          start-up-command: 'npm start'
+          port: 9000
