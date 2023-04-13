@@ -25,15 +25,6 @@ jobs:
       run: |
         npm install
 
-    - name: My Function
-      env:
-        MY_URL: https://univ-np-eus-func.azurewebsites.net
-      run: |
-        UNIV-NP-EUS-FUNC 
-        {
-          curl -X GET $MY_URL
-        }    
-
     - name: Set up Azure Functions extension
       uses: azure/functions-action@v1
       with:
